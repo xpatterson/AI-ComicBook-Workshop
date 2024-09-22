@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Comic Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title-section h1 {
+            font-size: 3em;
+            color: #333;
+        }
+
+        .comic-box {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .comic-box img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .comic-box p {
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+        }
+
+        /* Customizable color settings */
+        :root {
+            --bg-color: #f4f4f9;
+            --box-color: #fff;
+            --text-color: #333;
+            --title-color: #000;
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        .comic-box {
+            background-color: var(--box-color);
+        }
+
+        .title-section h1 {
+            color: var(--title-color);
+        }
+
+        .comic-box p {
+            color: var(--text-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .comic-box {
+                width: 95%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="title-section">
+        <h1>My Awesome Comic</h1>
+    </div>
+
+    <div class="comic-box">
+        <img src="comic-image1.jpg" alt="Comic Image 1">
+        <p>This is a description for the first comic image.</p>
+    </div>
+
+    <div class="comic-box">
+        <img src="comic-image2.jpg" alt="Comic Image 2">
+        <p>This is a description for the second comic image.</p>
+    </div>
+
+    <div class="comic-box">
+        <img src="comic-image3.jpg" alt="Comic Image 3">
+        <p>This is a description for the third comic image.</p>
+    </div>
+
+    <!-- Add new boxes below -->
+    <!-- Example: 
+    <div class="comic-box">
+        <img src="comic-image4.jpg" alt="Comic Image 4">
+        <p>This is a description for the fourth comic image.</p>
+    </div> 
+    -->
+
+</body>
+</html>
